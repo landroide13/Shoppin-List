@@ -5,8 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import store from './store';
 
+import { Container } from 'reactstrap';
 import NavbarApp from './components/NavbarApp'
 import Shoppinlist from './components/ShoppingList'
+import ItemModal from './components/ItemModal';
 
 class App extends Component {
 
@@ -17,8 +19,11 @@ class App extends Component {
           <NavbarApp />
 
           <h1>Shoppin List App</h1>
-          <hr />
-          <Shoppinlist />
+          <Container>
+            <ItemModal />
+            <hr />
+            <Shoppinlist />
+          </Container>
 
         </div>
       </Provider>
