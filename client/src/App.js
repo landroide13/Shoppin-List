@@ -17,9 +17,10 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <NavbarApp />
-
-          <h1>Shoppin List App</h1>
+          
           <Container>
+            <h1>Shopping List App</h1>
+            <hr />
             <ItemModal />
             <hr />
             <Shoppinlist />
